@@ -54,7 +54,9 @@ services:
 
 databases:
   - name: n8n-db
-    plan: Starter
+    plan: Basic-256mb
+    # set disk size if needed
+    diskSizeGB: 5
     # The free instance type is limited to 1 GB of disk
     # space.
     #
